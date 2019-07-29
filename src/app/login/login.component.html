@@ -1,14 +1,38 @@
-<div class="body">
-  <div class="card">
-    
-      <h1 class="title">Listy</h1>
-      <h1 class="subtitle">Entre na sua conta!</h1>
+<div class="container">
 
-      <ion-label class="label">Login</ion-label>
-      <ion-input clearInput class="input"></ion-input>
-      <ion-label class="label">Senha</ion-label>
-      <ion-input clearInput class="input"></ion-input>
-      <h1 class="signup">Ainda não tem conta? <a href="">Cadastre-se agora!</a></h1>
-
+  <h1 class="title">Listy</h1>
+  
+  <div class="box">
+    <ion-slides mode="ios" pager="ios">
+      <ion-slide class="slide">
+        <div class="login-slide">
+          <h1 class="subtitle">Login</h1>
+          <ion-item>
+            <ion-input class="input" type="email" placeholder="E-mail"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input class="input" type="password" placeholder="Senha"></ion-input>
+          </ion-item>
+          <ion-button>Entrar</ion-button>
+        </div>
+      </ion-slide>
+      <ion-slide class="slides">
+        <div class="signup-slide">
+          <h1 class="subtitle">Criar conta</h1>
+          <ion-item>
+            <ion-input type="text" placeholder="Nome"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="email" placeholder="E-mail"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" placeholder="Senha"></ion-input>
+          </ion-item>
+          <ion-button>Cadastrar-se</ion-button>
+        </div>
+      </ion-slide>
+    </ion-slides>
   </div>
+
+  <h1 class="footer-title">Listy, seu app de organização!</h1>
 </div>
